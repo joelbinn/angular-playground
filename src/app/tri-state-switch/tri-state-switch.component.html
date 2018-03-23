@@ -1,0 +1,10 @@
+<label class="switch" (mouseup)="toggleSwitch()">
+  <input type="radio" name="gender" value="male" checked>
+  <input type="radio" name="gender" value="female">
+  <input type="radio" name="gender" value="other">
+  <span class="slider"
+        [ngClass]="{'first-state': state===0, 'second-state': state===1,'third-state': state===2}"></span>
+  <span class="first-state label" [ngClass]="{'active': state===0}" (click)="setState(0)">misstänkt</span>
+  <span class="second-state label" [ngClass]="{'active': state===1}" (click)="setState(1)">övrig</span>
+  <span class="third-state label" [ngClass]="{'active': state===2}" (click)="setState(2)">inkludera&nbsp;ej</span>
+</label>

@@ -1,0 +1,62 @@
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  background-color: gray;
+  width: 12px;
+  height: 33px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+
+span.slider {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  left: 2px;
+  background-color: white;
+  transition: bottom .3s;
+
+  &.first-state {
+    bottom: 23px;
+  }
+
+  &.second-state {
+    bottom: 13px;
+  }
+
+  &.third-state {
+    bottom: 2px;
+  }
+}
+
+span.label {
+  position: absolute;
+  font-size: xx-small;
+  left: 14px;
+  &.first-state {
+    top: -3px;
+  }
+
+  &.second-state {
+    top: 9px;
+  }
+
+  &.third-state {
+    top: 22px;
+  }
+
+  &.active {
+    color: red;
+    font-weight: bold;
+  }
+
+  &:not(active) {
+    color: grey;
+  }
+}

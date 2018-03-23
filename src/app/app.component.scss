@@ -1,0 +1,20 @@
+$breakpoint: 500px;
+
+@media all and (max-width: $breakpoint) {
+  div.collapse {
+    display: block
+  }
+  div.full-width {
+    display: none;
+  }
+}
+
+@media all and (min-width: $breakpoint + 1) {
+  div.collapse {
+    display: none
+  }
+  div.full-width {
+    display: block;
+  }
+}
+
