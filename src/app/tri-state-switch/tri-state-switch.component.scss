@@ -52,11 +52,13 @@ span.label {
   }
 
   &.active {
-    color: red;
     font-weight: bold;
+    font-style: normal;
+    color: black;
   }
 
   &:not(active) {
     color: grey;
+    font-style: italic;
   }
 }
